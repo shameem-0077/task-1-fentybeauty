@@ -57,7 +57,7 @@ body {
     width: 95%;
 }
 
-#header-section > div.top {
+#above-header-section > div.content {
     display: flex;
     justify-content: center;
     background-color: black;
@@ -66,78 +66,204 @@ body {
     padding: 5px;
 }
 
-#header-section > div.top > a {
+#above-header-section > div.content > a {
     text-decoration: underline;
     padding-left: 5px;
     color: white;
 }
 
-#header-section > div.bottom > header {
+#header-section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+}
+
+#header-section > header {
     font-family: 'poppins-light';
 }
 
-#header-section > div.bottom > header > .wrapper > div.top {
+#header-section > header > .wrapper > div.top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-#header-section > div.bottom > header > .wrapper > div.top > div.left {
+#header-section > header > .wrapper > div.top > ul.left > li > a {
     display: flex;
-    align-items: flex-end;
+    color: black;
+    font-size: 13px;
+    font-family: 'poppins-regular';
 }
 
-#header-section > div.bottom > header > .wrapper > div.top > div.left > div.flag-icon {
+#header-section > header > .wrapper > div.top > ul.left > li > a > img {
     width: 25px;
 }
 
-#header-section > div.bottom > header > .wrapper > div.top > div.left > p {
-    font-size: 15px;
-    vertical-align: sub;
-    padding: 0;
-}
 
-#header-section > div.bottom > header > .wrapper > div.top > div.left > div.vl {
-    border-left: 2px solid black;
-    height: 70%;
-    margin: 5px;
-}
-
-#header-section > div.bottom > header > .wrapper > div.top > div.right {
+#header-section > header > .wrapper > div.top > ul.right {
     display: flex;
     align-items: center;
 }
 
-#header-section > div.bottom > header > .wrapper > div.bottom {}
+#header-section > header > .wrapper > div.top > ul.right > li {
+    padding-right: 5px;
+}
 
-#header-section > div.bottom > header > .wrapper > div.bottom > ul {
+#header-section > header > .wrapper > div.top > ul.right > li > a {
+    color: black;
+    font-family: 'poppins-regular';
+    font-size: 13px;
+
+}
+
+#header-section > header > .wrapper > div.top > ul.right > li > a > img {
+    width: 15px;
+}
+
+#header-section > header > .wrapper > div.bottom {}
+
+#header-section > header > .wrapper > div.bottom > ul {
     display: flex;
     justify-content: center;
 }
 
-#header-section > div.bottom > header > .wrapper > div.bottom > ul > li {
+#header-section > header > .wrapper > div.bottom > ul > li {
     padding: 5px 15px;
     font-family: 'poppins-regular';
 }
 
-#header-section > div.bottom > header > .wrapper > div.bottom > ul > li > a {
+#header-section > header > .wrapper > div.bottom > ul > li > a {
     color: black;
 }
 
-#header-section > div.bottom > header > .wrapper > div.bottom > ul > li > a:hover {
+#header-section > header > .wrapper > div.bottom > ul > li > a:hover {
     text-decoration: underline;
 }
 
+#spotlight-section {
+    position: relative;
+
+}
+
+
+#spotlight-section > div.spotlight-content {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
 #spotlight-section > div.bg-video {
-    width: 100vw;
+    background-color: #F3E1DB;
+}
+
+#spotlight-section > div.bg-video > .spotlight-video {
     height: 100%;
+    width: 100%;
+}
+
+#spotlight-section > div.spotlight-content {
+    padding: 50px;
+    color: white;
+    font-family: 'poppins-medium';
+}
+
+#spotlight-section > div.spotlight-content > p {
+    font-family: 'poppins-regular';
+    margin-bottom: 20px;
+}
+
+#spotlight-section > div.spotlight-content > h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#spotlight-section > div.spotlight-content > a {
+    padding: 15px 50px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+    font-family: 'poppins-regular';
+    font-weight: bold;
+}
+
+#fendybrands-section {
+    padding: 50px 0;
+    background-color: #F3E1DB;
 
 }
 
-#spotlight-section > div.bg-video > .hero-slider__slide-video {
+#fendybrands-section > .wrapper > .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fendybrands-section > .wrapper > .top > h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#fendybrands-section > .wrapper > .bottom > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#fendybrands-section > .wrapper > .bottom > ul > li {
+    padding: 10px;
+}
+
+#fendybrands-section > .wrapper > .bottom > ul > li > h4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#fendybrands-section > .wrapper > .bottom > ul > li > div {
+    
+}
+
+#fendybrands-section > .wrapper > .bottom > ul > li > div > img {
+    object-fit: cover;
+    width: 350px;
     height: 400px;
-    width: 600px;
 }
 
+#footer-section > div.container {
+    display: flex;
+}
+
+#footer-section > div.container > div.left {
+    width: 30%;
+    background-color: #1F1F1F;
+    color: white;
+    font-size: 10px;
+    padding: 30px;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .top {
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .center {
+    margin-bottom: 10px;
+
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .bottom {
+    margin-bottom: 50px;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .bottom-section {
+    
+}
+
+#footer-section > div.container > div.right {
+    width: 70%;
+    background-color: black;
+}
 
