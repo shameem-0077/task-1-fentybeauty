@@ -245,6 +245,13 @@ body {
     padding: 30px;
 }
 
+#footer-section > div.container > div.left > div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 #footer-section > div.container > div.left > div.wrapper > .top-section > .top {
     margin-bottom: 10px;
 }
@@ -254,16 +261,146 @@ body {
 
 }
 
+#footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div {
+    position: relative;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div > input {
+    width: 100%;
+    background: none;
+    border: 1px solid #666;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div > input::placeholder {
+    color: white;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div > button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
 #footer-section > div.container > div.left > div.wrapper > .top-section > .bottom {
     margin-bottom: 50px;
 }
 
-#footer-section > div.container > div.left > div.wrapper > .bottom-section {
-    
+#footer-section > div.container > div.left > div.wrapper > .bottom-section > div.fenty-logo {
+    width: 250px;
 }
 
 #footer-section > div.container > div.right {
     width: 70%;
     background-color: black;
+    color: white;
+    padding: 30px 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top {
+
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+    
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .left { grid-area: 1 / 1 / 2 / 2; }
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .center { grid-area: 1 / 2 / 2 / 3; }
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right { grid-area: 1 / 3 / 2 / 4; }
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .left {
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > .title > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > ul > li {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > ul > li > a {
+    color: white;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .center {
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > .title > h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > ul > li {
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > ul > li > a {
+    color: white;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right > div {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right > div > img {
+    border-radius: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list {
+    display: flex;
+    width: 20%;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list > li > div {
+    width: 50px;
+    padding: 10px;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .right > ul {
+    display: flex;
+
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a {
+    display: flex;
+    color: white;
+    font-size: 13px;
+    font-family: 'poppins-regular';
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a > img {
+    width: 25px;
 }
 
