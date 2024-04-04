@@ -799,7 +799,54 @@ body {
         display: block;
     }
 }
-@media all and (max-width: 360px) {}
+@media all and (max-width: 360px) {
+    #header-section > header > .wrapper > div.bottom {
+        padding: 0 10px;
+    }
+
+    #above-header-section > div.content {
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    #header-section > header > .wrapper > div.top > div.center {
+        width: 150px;
+    }
+
+    #spotlight-section > div.spotlight-content {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    #spotlight-section > div.spotlight-content > p {
+        font-size: 12px;
+    }
+
+    #spotlight-section > div.spotlight-content > a {
+        padding: 5px 10px;
+    }
+
+    #spotlight-section > div.spotlight-content > h1 {
+        font-size: 15px;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left {
+        flex-wrap: wrap;
+    }
+    .shared-social-icons-list-style {
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.responsive-360 {
+        width: 100%;
+        justify-content: center;
+    }
+}
 @media all and (max-width: 320px) {}
 
 
