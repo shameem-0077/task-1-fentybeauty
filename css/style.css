@@ -856,6 +856,23 @@ body {
         width: 100%;
         justify-content: flex-start;
     }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        justify-content: flex-start;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div {
+        text-align: center;
+    }
+
+    #fendybrands-section > .wrapper > .top > h2 {
+        font-size: 20px;
+    }
+
+    #fendybrands-section > .wrapper > .top > p {
+        font-size: 15px;
+        text-align: center;
+    }
 }
 @media all and (max-width: 320px) {
     #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
