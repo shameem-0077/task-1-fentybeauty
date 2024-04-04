@@ -670,8 +670,19 @@ body {
         margin: 10px;
     }
 
-    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > a {
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div > a {
         color: black;
+    }
+
+    #header-section > header > .wrapper {
+        padding: unset;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div {
+        width: 90px;
     }
 
 }
@@ -779,7 +790,7 @@ body {
         margin: 5px;
     }
 
-    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > a {
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div > a {
         font-size: 10px;
     }
 
@@ -831,23 +842,31 @@ body {
         font-size: 15px;
     }
 
-    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+    #header-section > header > .wrapper > div.bottom {
         overflow-x: scroll;
         width: 100%;
+        padding: 5px 10px;
     }
 
     #footer-section > div.container > div.right > .wrapper > .bottom > .left {
         flex-wrap: wrap;
     }
-    .shared-social-icons-list-style {
-    }
 
     #footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.responsive-360 {
         width: 100%;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
-@media all and (max-width: 320px) {}
+@media all and (max-width: 320px) {
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        justify-content: flex-start;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div {
+        text-align: center;
+    }
+
+}
 
 
 
