@@ -12,6 +12,18 @@ a {
     text-decoration: none;
 }
 
+div.responsive-hr-line {
+    display: none;
+}
+
+div.responsive-hr-line-640 {
+    display: none;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > div.left-responsive-640 {
+    display: none;
+}
+
 
 img {
     display: block;
@@ -566,6 +578,8 @@ body {
         padding: 10px;
     }
 
+   
+
     #footer-section > div.container > div.right > .wrapper > .bottom > div.responsive-hr-line {
         display: initial;
         width: 100%;
@@ -674,7 +688,82 @@ body {
         height: 250px;
     }
 }
-@media all and (max-width: 640px) {}
+@media all and (max-width: 640px) {
+    #spotlight-section > div.spotlight-content {
+        bottom: 20px;
+        left: 20px
+    }
+    #spotlight-section > div.spotlight-content {
+        padding: 10px;
+    }
+
+    #spotlight-section > div.spotlight-content > p {
+        margin-bottom: 10px;
+    }
+
+    #spotlight-section > div.spotlight-content > h1 {
+        font-size: 20px;
+    }
+
+    #spotlight-section > div.spotlight-content > a {
+        padding: 10px 15px;
+    }
+
+    #fendybrands-section {
+        padding: 20px 0;
+    }
+
+    #fendybrands-section > .wrapper > .bottom > ul > li > div > img {
+        width: 150px;
+        height: 200px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .top-section {
+        width: 100%;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section {
+        width: 100%;
+
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section > div.rihana-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section > div.rihana-image > img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .top-section > .bottom {
+        margin-bottom: 10px;
+    }
+
+    div.responsive-hr-line {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .top > .parent {
+        display: none;
+    }
+
+    .shared-social-icons-list-style {
+        justify-content: flex-end;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left-responsive-640 {
+        display: flex !important;
+    }
+}
 @media all and (max-width: 480px) {}
 @media all and (max-width: 360px) {}
 @media all and (max-width: 320px) {}
