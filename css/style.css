@@ -98,6 +98,10 @@ body {
     font-family: 'poppins-regular';
 }
 
+#header-section > header > .wrapper > div.top > ul.left > li:not(li:first-child) {
+    display: none;
+}
+
 #header-section > header > .wrapper > div.top > ul.left > li > a > img {
     width: 25px;
 }
@@ -107,6 +111,8 @@ body {
     display: flex;
     align-items: center;
 }
+
+
 
 #header-section > header > .wrapper > div.top > ul.right > li {
     padding-right: 5px;
@@ -125,29 +131,33 @@ body {
 
 #header-section > header > .wrapper > div.bottom {}
 
-#header-section > header > .wrapper > div.bottom > ul {
+#header-section > header > .wrapper > div.bottom > ul.main-ul {
     display: flex;
     justify-content: center;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li {
+#header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+    display: none;
+}
+
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li {
     padding: 5px 15px;
     font-family: 'poppins-regular';
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > .highlight {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > .highlight {
     position: relative;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > .highlight > a {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > .highlight > a {
     color: black;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > .highlight > a:hover {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > .highlight > a:hover {
     text-decoration: underline;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > .highlight::after {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > .highlight::after {
     position: absolute;
     content: "";
     display: inline-block;
@@ -157,11 +167,11 @@ body {
     left: 0;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > a {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > a {
     color: black;
 }
 
-#header-section > header > .wrapper > div.bottom > ul > li > a:hover {
+#header-section > header > .wrapper > div.bottom > ul.main-ul > li > a:hover {
     text-decoration: underline;
 }
 
@@ -462,7 +472,7 @@ body {
         font-size: 13px;
     }
 
-    #header-section > header > .wrapper > div.bottom > ul > li {
+    #header-section > header > .wrapper > div.bottom > ul.main-ul > li {
         padding: 5px 10px;
     }
 
@@ -591,7 +601,66 @@ body {
         width: 70%;
     }
 }
-@media all and (max-width: 980px) {}
+@media all and (max-width: 980px) {
+    #header-section > header > .wrapper > div.top {
+        padding: 10px 0;
+    }
+    #header-section > header > .wrapper > div.top > ul.left {
+        display: flex;
+    }
+
+    #header-section > header > .wrapper > div.top > ul.left > li {
+        padding: 10px;
+        width: 40px;
+    }
+
+    #header-section > header > .wrapper > div.top > ul.left > li:first-child {
+        display: none
+
+    }
+
+    #header-section > header > .wrapper > div.top > ul.left > li:nth-child(2), #header-section > header > .wrapper > div.top > ul.left > li:nth-child(3) {
+        display: block !important;
+    }
+
+    #header-section > header > .wrapper > div.top > ul.right > li > a > img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    #header-section > header > .wrapper > div.top > ul.right > li:nth-child(1) {
+        display: none;
+    }
+
+    #header-section > header > .wrapper > div.top > ul.right > li:nth-child(even) {
+        display: none;
+    }
+
+    #header-section > header > .wrapper > div.top > div.center {
+        width: 200px;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.main-ul {
+        display: none;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li {
+        padding: 5px 10px;
+        font-family: 'poppins-regular';
+        border: 1px solid #666;
+        margin: 10px;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > a {
+        color: black;
+    }
+
+}
 @media all and (max-width: 768px) {}
 @media all and (max-width: 640px) {}
 @media all and (max-width: 480px) {}
