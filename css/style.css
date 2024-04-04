@@ -763,8 +763,42 @@ body {
     #footer-section > div.container > div.right > .wrapper > .bottom > .left-responsive-640 {
         display: flex !important;
     }
+
+    div.responsive-hr-line-640 {
+        display: block;
+    }
 }
-@media all and (max-width: 480px) {}
+
+@media all and (max-width: 480px) {
+    #fendybrands-section > .wrapper > .bottom > ul {
+        overflow-x: scroll;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > a {
+        font-size: 10px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div  {
+        width: 100%;
+    }
+
+    #footer-section > div.container > div.right {
+        padding: 0 10px 10px;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left {
+        padding: 5px;
+    }
+
+    div.responsive-hr-line-640 {
+        display: block;
+    }
+}
 @media all and (max-width: 360px) {}
 @media all and (max-width: 320px) {}
 
