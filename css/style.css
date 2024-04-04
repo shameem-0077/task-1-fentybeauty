@@ -783,6 +783,7 @@ body {
 @media all and (max-width: 480px) {
     #fendybrands-section > .wrapper > .bottom > ul {
         overflow-x: scroll;
+        justify-content: flex-start;
     }
 
     #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li {
