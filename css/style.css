@@ -170,7 +170,6 @@ body {
 
 }
 
-
 #spotlight-section > div.spotlight-content {
     position: absolute;
     bottom: 0;
@@ -330,6 +329,10 @@ body {
     width: 250px;
 }
 
+#footer-section > div.container > div.left > div.wrapper > .bottom-section > div.rihana-image {
+    display: none;
+}
+
 #footer-section > div.container > div.right {
     width: 70%;
     background-color: black;
@@ -352,41 +355,29 @@ body {
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .left { grid-area: 1 / 1 / 2 / 2; }
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .center { grid-area: 1 / 2 / 2 / 3; }
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .right { grid-area: 1 / 3 / 2 / 4; }
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right-responsive { grid-area: 1 / 3 / 2 / 4; }
+
 
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .left {
 }
 
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > .title > h2 {
+#footer-section > div.container > div.right > .wrapper > .top > .parent > div > .title > h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > ul > li {
+#footer-section > div.container > div.right > .wrapper > .top > .parent > div > ul > li {
     font-size: 12px;
     margin-bottom: 10px;
 }
 
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .left > ul > li > a {
+#footer-section > div.container > div.right > .wrapper > .top > .parent > div > ul > li > a {
     color: white;
 }
 
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .center {
 }
 
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > .title > h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > ul > li {
-    font-size: 12px;
-    margin-bottom: 10px;
-
-}
-
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .center > ul > li > a {
-    color: white;
-}
 
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .right {
     display: flex;
@@ -394,7 +385,11 @@ body {
     
 }
 
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .right > div {
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right-responsive {
+    display: none;
+}
+
+#footer-section > div.container > div.right > .wrapper > .top > .parent > .right > div.rihana-image {
     width: 250px;
     border-radius: 10px;
 }
@@ -411,15 +406,28 @@ body {
     margin-top: 50px;
 }
 
-#footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list {
+#footer-section > div.container > div.right > .wrapper > .bottom > div.responsive-hr-line {
+    display: none;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > div.left-responsive {
+    display: none;
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .left > div.title {
+    display: none;
+}
+
+.shared-social-icons-list-style {
     display: flex;
     width: 20%;
 }
 
-#footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list > li > div {
+.shared-social-icons-list-style > li > div {
     width: 40px;
     padding: 8px;
 }
+
 
 #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul {
     display: flex;
@@ -446,4 +454,152 @@ body {
 #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a > img {
     width: 25px;
 }
+
+
+@media all and (max-width: 1100px) {
+    #header-section > header > .wrapper > div.bottom {
+        padding: 0 50px;
+        font-size: 13px;
+    }
+
+    #header-section > header > .wrapper > div.bottom > ul > li {
+        padding: 5px 10px;
+    }
+
+    #fendybrands-section > .wrapper > .top > h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    #fendybrands-section > .wrapper > .top > p {
+        margin-bottom: 10px;
+    }
+
+    #fendybrands-section > .wrapper > .bottom > ul > li > h4 {
+        font-size: 15px;
+    }
+
+    #fendybrands-section > .wrapper > .bottom > ul > li > div > img {
+        width: 250px;
+        height: 300px;
+    }
+
+    #footer-section > div.container {
+        display: block;
+    }
+
+    #footer-section > div.container > div.left {
+        width: 100%;
+        background-color: black;;
+        color: white;
+        font-size: 10px;
+        padding: 30px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .top-section {
+        width: 60%;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section > div.fenty-logo {
+        display: none;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section > div.rihana-image {
+        display: block;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .bottom-section > div.rihana-image > img {
+        border-radius: 10px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper {
+        flex-direction: row;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .top > .parent > .right {
+        display: none;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .top > .parent > .right-responsive {
+        display: initial
+    }
+
+    #footer-section > div.container > div.right {
+        width: 100%;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .top > .parent {
+        grid-column-gap: 50px;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > div.left > div.title {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom {
+        display: initial;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > div.responsive-hr-line {
+        display: initial;
+        width: 100%;
+
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > div.left-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .right {
+        margin-top: 20px;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li:not(li:first-child, li:last-child) {
+        display: none;
+
+    }
+
+    #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li:first-child {
+        padding: 10px;
+    }
+
+    #footer-section > div.container > div.left > div.wrapper > .top-section > .center > form > div {
+        width: 70%;
+    }
+}
+@media all and (max-width: 980px) {}
+@media all and (max-width: 768px) {}
+@media all and (max-width: 640px) {}
+@media all and (max-width: 480px) {}
+@media all and (max-width: 360px) {}
+@media all and (max-width: 320px) {}
+
+
+
+
+
 
