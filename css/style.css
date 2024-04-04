@@ -135,6 +135,28 @@ body {
     font-family: 'poppins-regular';
 }
 
+#header-section > header > .wrapper > div.bottom > ul > li > .highlight {
+    position: relative;
+}
+
+#header-section > header > .wrapper > div.bottom > ul > li > .highlight > a {
+    color: black;
+}
+
+#header-section > header > .wrapper > div.bottom > ul > li > .highlight > a:hover {
+    text-decoration: underline;
+}
+
+#header-section > header > .wrapper > div.bottom > ul > li > .highlight::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url('../assets/icons/star.svg');
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
 #header-section > header > .wrapper > div.bottom > ul > li > a {
     color: black;
 }
@@ -235,6 +257,7 @@ body {
 
 #footer-section > div.container {
     display: flex;
+    font-family: 'poppins-light';
 }
 
 #footer-section > div.container > div.left {
@@ -253,6 +276,15 @@ body {
 }
 
 #footer-section > div.container > div.left > div.wrapper > .top-section > .top {
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .top > h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#footer-section > div.container > div.left > div.wrapper > .top-section > .top > p {
     margin-bottom: 10px;
 }
 
@@ -376,6 +408,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     color: white;
+    margin-top: 50px;
 }
 
 #footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list {
@@ -384,8 +417,8 @@ body {
 }
 
 #footer-section > div.container > div.right > .wrapper > .bottom > .left > ul.social-icons-list > li > div {
-    width: 50px;
-    padding: 10px;
+    width: 40px;
+    padding: 8px;
 }
 
 #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul {
@@ -393,11 +426,21 @@ body {
 
 }
 
+#footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
 #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a {
     display: flex;
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     font-family: 'poppins-regular';
+}
+
+#footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a > span.country-laungage {
+    font-size: 13px;
 }
 
 #footer-section > div.container > div.right > .wrapper > .bottom > .right > ul > li > a > img {
