@@ -661,7 +661,19 @@ body {
     }
 
 }
-@media all and (max-width: 768px) {}
+@media all and (max-width: 768px) {
+    #footer-section > div.container > div.right > .wrapper > .bottom > .left {
+        justify-content: space-between;
+    }
+    .shared-social-icons-list-style {
+        width: 30%;
+    }
+
+    #fendybrands-section > .wrapper > .bottom > ul > li > div > img {
+        width: 200px;
+        height: 250px;
+    }
+}
 @media all and (max-width: 640px) {}
 @media all and (max-width: 480px) {}
 @media all and (max-width: 360px) {}
