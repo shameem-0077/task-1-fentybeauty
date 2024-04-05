@@ -141,8 +141,6 @@ a.flag-country > img {
     width: 15px;
 }
 
-#header-section > header > .wrapper > div.bottom {}
-
 #header-section > header > .wrapper > div.bottom > ul.main-ul {
     display: flex;
     justify-content: center;
@@ -266,9 +264,6 @@ a.flag-country > img {
     font-size: 18px;
 }
 
-#fendybrands-section > .wrapper > .bottom > ul > li > div {
-    
-}
 
 #fendybrands-section > .wrapper > .bottom > ul > li > div > img {
     object-fit: cover;
@@ -362,10 +357,6 @@ a.flag-country > img {
     padding: 30px 10px;
 }
 
-#footer-section > div.container > div.right > .wrapper > .top {
-
-}
-
 #footer-section > div.container > div.right > .wrapper > .top > .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -378,10 +369,6 @@ a.flag-country > img {
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .center { grid-area: 1 / 2 / 2 / 3; }
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .right { grid-area: 1 / 3 / 2 / 4; }
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .right-responsive { grid-area: 1 / 3 / 2 / 4; }
-
-
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .left {
-}
 
 #footer-section > div.container > div.right > .wrapper > .top > .parent > div > .title > h2 {
     font-size: 20px;
@@ -396,10 +383,6 @@ a.flag-country > img {
 #footer-section > div.container > div.right > .wrapper > .top > .parent > div > ul > li > a {
     color: white;
 }
-
-#footer-section > div.container > div.right > .wrapper > .top > .parent > .center {
-}
-
 
 #footer-section > div.container > div.right > .wrapper > .top > .parent > .right {
     display: flex;
@@ -546,8 +529,6 @@ a.flag-country > img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 #nav-bar > div.products > ul > li > div.wrapper > div.left {
@@ -562,11 +543,6 @@ a.flag-country > img {
 
 #nav-bar > div.products > ul > li > div.wrapper > div.right > div.expand-icon {
     width: 20px;
-}
-
-#nav-bar > div.gifts-dropalerts {
-
-
 }
 
 #nav-bar > div.gifts-dropalerts > div.top {
@@ -607,10 +583,6 @@ a.flag-country > img {
     background-color: white;
     color: black;
     text-decoration: underline;
-}
-
-#nav-bar > div.handpicked-for-you {
-
 }
 
 #nav-bar > div.handpicked-for-you > div.wrapper ul {
