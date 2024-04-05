@@ -103,7 +103,7 @@ body {
     padding: 20px 0;
 }
 
-#header-section > header > .wrapper > div.top > ul.left > li > a {
+a.flag-country {
     display: flex;
     color: black;
     font-size: 13px;
@@ -114,7 +114,7 @@ body {
     display: none;
 }
 
-#header-section > header > .wrapper > div.top > ul.left > li > a > img {
+a.flag-country > img {
     width: 25px;
 }
 
@@ -477,6 +477,187 @@ body {
     width: 25px;
 }
 
+#nav-bar {
+    display: none;
+}
+  
+#nav-bar:target {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+#nav-bar > div.nav-bar-top {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+#nav-bar > div.nav-bar-top > div.close-icon {
+    width: 15px;
+}
+
+#nav-bar > div.nav-bar-spotlight {
+    padding: 20px 0;
+    color: white;
+}
+
+#nav-bar > div.nav-bar-spotlight > div.container {
+    display: flex;
+    width: 98%;
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+    border-radius: 2px;
+
+}
+
+#nav-bar > div.nav-bar-spotlight > div.container > div.left {
+    width: 40%;
+}
+
+#nav-bar > div.nav-bar-spotlight > div.container > div.left > div.spotlight-image {
+    margin-right: 10px;
+}
+
+#nav-bar > div.products {
+    
+}
+
+#nav-bar > div.products > ul > li {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 20px 0;
+
+}
+
+#nav-bar > div.products > ul > li > div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#nav-bar > div.products > ul > li > div.wrapper > div.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-bar > div.products > ul > li > div.wrapper > div.left > div.product-image {
+    width: 150px;
+}
+
+#nav-bar > div.gifts-dropalerts {
+
+
+}
+
+#nav-bar > div.gifts-dropalerts > div.top {
+    display: flex;
+}
+
+#nav-bar > div.gifts-dropalerts > div.top > div.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+#nav-bar > div.gifts-dropalerts > div.top > div.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+#nav-bar > div.gifts-dropalerts > div.bottom {
+    background-color: #f2f2f2;
+    padding: 10px;
+
+}
+
+#nav-bar > div.gifts-dropalerts > div.bottom > div.wrapper > div.gift-image {
+    padding: 20px 0;
+}
+#nav-bar > div.gifts-dropalerts > div.bottom > div.wrapper > div.terms-button {
+    display: flex;
+}
+#nav-bar > div.gifts-dropalerts > div.bottom > div.wrapper > div.terms-button > a {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+#nav-bar > div.handpicked-for-you {
+
+}
+
+#nav-bar > div.handpicked-for-you > div.wrapper ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+#nav-bar > div.handpicked-for-you > div.wrapper ul > li {
+    padding: 10px;
+}
+
+#nav-bar > div.handpicked-for-you > div.wrapper ul > li > div.product-image {
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+#nav-bar > div.handpicked-for-you > div.wrapper ul > li > div.stars {
+    display: flex;
+    padding: 10px 0;
+}
+
+#nav-bar > div.handpicked-for-you > div.wrapper ul > li > div.stars > div.star-icon {
+    width: 20px;
+}
+
+#nav-bar > div.autograph {
+    display: flex;
+    background-color: #1f1f1f;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+
+#nav-bar > div.autograph > div.right > div.bottom > div.autograph-image {
+    width: 100px;
+    padding: 10px;
+}
+
+#nav-bar > div.navbar-footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+#nav-bar > div.navbar-footer > div.wrapper > ul > li {
+    padding: 10px 0;
+}
+
+#nav-bar > div.navbar-footer > div.wrapper > ul > li a {
+    color: white;
+}
+
 
 @media all and (max-width: 1100px) {
     #header-section > header > .wrapper > div.bottom {
@@ -615,6 +796,7 @@ body {
         width: 70%;
     }
 }
+
 @media all and (max-width: 980px) {
     #header-section > header > .wrapper > div.top {
         padding: 10px 0;
@@ -679,13 +861,22 @@ body {
     }
 
     #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        overflow-x: scroll;
+    }
+
+    #header-section > header > .wrapper > div.bottom {
+        padding: 0;
     }
 
     #header-section > header > .wrapper > div.bottom > ul.responsive-ul > li > div {
-        width: 90px;
+        display: flex;
+        justify-content: center;
+        width: 110px;
+
     }
 
 }
+
 @media all and (max-width: 768px) {
     #footer-section > div.container > div.right > .wrapper > .bottom > .left {
         justify-content: space-between;
@@ -698,7 +889,12 @@ body {
         width: 200px;
         height: 250px;
     }
+
+    #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
+        justify-content: flex-start;
+    }
 }
+
 @media all and (max-width: 640px) {
     #spotlight-section > div.spotlight-content {
         bottom: 20px;
@@ -778,6 +974,11 @@ body {
     div.responsive-hr-line-640 {
         display: block;
     }
+
+    #nav-bar > div.autograph > div.right > div.top > p {
+        font-size: 13px;
+        padding: 10px;
+    }
 }
 
 @media all and (max-width: 480px) {
@@ -811,6 +1012,7 @@ body {
         display: block;
     }
 }
+
 @media all and (max-width: 360px) {
     #header-section > header > .wrapper > div.bottom {
         padding: 0 10px;
@@ -875,6 +1077,7 @@ body {
         text-align: center;
     }
 }
+
 @media all and (max-width: 320px) {
     #header-section > header > .wrapper > div.bottom > ul.responsive-ul {
         justify-content: flex-start;
