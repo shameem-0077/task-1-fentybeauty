@@ -78,7 +78,7 @@ body {
     padding: 5px;
 }
 
-#above-header-section > div.content > a {
+a.shop-now {
     text-decoration: underline;
     padding-left: 5px;
     color: white;
@@ -531,6 +531,7 @@ a.flag-country > img {
 }
 
 #nav-bar > div.products {
+    font-weight: 500;
     
 }
 
@@ -557,6 +558,10 @@ a.flag-country > img {
 
 #nav-bar > div.products > ul > li > div.wrapper > div.left > div.product-image {
     width: 150px;
+}
+
+#nav-bar > div.products > ul > li > div.wrapper > div.right > div.expand-icon {
+    width: 20px;
 }
 
 #nav-bar > div.gifts-dropalerts {
@@ -1088,9 +1093,3 @@ a.flag-country > img {
     }
 
 }
-
-
-
-
-
-
